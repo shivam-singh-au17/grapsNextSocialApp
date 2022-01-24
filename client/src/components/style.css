@@ -1,0 +1,147 @@
+/* Log in */
+
+.loginMaxWidth {
+  max-width: 80%;
+  margin: auto;
+}
+
+.loginBoxWidth {
+  width: 100%;
+  margin: auto;
+}
+
+.grapsnextsocial img {
+  width: 20%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.grapsnextsocial span {
+  position: relative;
+  top: 10px;
+  font-weight: bold;
+  color: #439100;
+}
+
+.buttonGoogle img {
+  width: 10%;
+}
+.buttonGoogle span {
+  position: relative;
+  top: 5px;
+}
+
+.buttonGoogle {
+  display: flex;
+  flex-direction: row;
+}
+
+.accountBox {
+  align-items: center;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+}
+
+.accountBox span {
+  position: relative;
+  top: -5px;
+}
+
+@media screen and (max-width: 1100px) {
+  .SlidShowBox {
+    display: none;
+  }
+  .loginBoxMain {
+    width: 100%;
+  }
+}
+
+/* Registration */
+
+.RegistrationBox {
+  max-width: 40%;
+  margin: auto;
+}
+
+.grapsnextsocialRegistration img {
+  width: 10%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.grapsnextsocialRegistration span {
+  position: relative;
+  top: 6px;
+  font-weight: bold;
+  color: #439100;
+}
+
+.RegistrationbuttonGoogle {
+  display: flex;
+  flex-direction: row;
+}
+
+.RegistrationbuttonGoogle img {
+  width: 5%;
+}
+
+.RegistrationaccountBox {
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.RegistrationaccountBox span {
+  position: relative;
+  top: 10px;
+}
+
+/* ERROR PAGE */
+
+.showError {
+  max-width: 80%;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.errorSection {
+  display: flex;
+  justify-content: space-between;
+}
+
+.leftErrorImg {
+  width: 45%;
+}
+
+.leftErrorImg img {
+  margin-top: 40px;
+  width: 100%;
+}
+
+.rightRror {
+  width: 45%;
+}
+
+.pageNotFound {
+  font-size: 30px;
+}
+
+.notFound {
+  font-size: 159px;
+  line-height: 90px;
+  color: rgba(0, 0, 0, 0.3);
+  fill: rgba(0, 0, 0, 0.3);
+  font-family: "Times New Roman", Times, serif;
+}
+
+.notFoundTxt {
+  font-size: 109px;
+  line-height: 110px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.errorpTag {
+  font-size: 20px;
+}
