@@ -4,10 +4,10 @@ const bcrypt = require("bcrypt");
 
 const authLayerSchema = new mongoose.Schema(
     {
-        name: { type: String },
-        email: { type: String, unique: true },
-        mobile: { type: String },
-        password: { type: String, minlength: 8 },
+        name: { type: String, required: true },
+        email: { type: String, required: true, unique: true },
+        mobile: { type: String, required: true },
+        password: { type: String, required: true, minlength: 8 },
     },
     {
         versionKey: false,
