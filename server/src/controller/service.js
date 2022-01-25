@@ -1,9 +1,8 @@
-
+require("dotenv").config();
 const jwt = require("jsonwebtoken");
-const config = require("../../config");
 
 const newToken = (user) => {
-    return jwt.sign({ user: user }, config.JWT_SECRET_KEY);
+    return jwt.sign({ user: user }, process.env.JWT_SECRET_KEY);
 };
 
 
@@ -25,7 +24,7 @@ const register = (model) => async (req, res) => {
         let token = newToken(user);
 
         // return token
-        return res.status(200).send({user, token});
+        return res.status(200).send({ user, token });
 
     } catch (err) {
         return res.status(500).json({ status: "failed", message: "Something went wrong" });
@@ -59,7 +58,7 @@ const login = (model) => async (req, res) => {
         let token = newToken(user);
 
         // return the token to the frontend
-        return res.status(200).json({ user, token});
+        return res.status(200).json({ user, token });
 
     } catch (err) {
         return res.status(500).json({ status: "failed", message: "Something went wrong" });
