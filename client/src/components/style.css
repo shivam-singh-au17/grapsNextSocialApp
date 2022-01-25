@@ -145,3 +145,39 @@
 .errorpTag {
   font-size: 20px;
 }
+
+/* Carousel */
+
+.mainCarouselBox {
+  max-width: 95%;
+  margin: auto;
+}
+
+.mainCarouselBox img {
+  height: 400px;
+}
+
+/* footer */
+
+.mainFooterBox {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.footerBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+/* Home */
+
+.hameMainBox{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
