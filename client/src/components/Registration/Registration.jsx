@@ -17,8 +17,11 @@ const Registration = () => {
       password: password,
     };
 
-    axios.post("http://localhost:4000/register", jsonData);
-    alert("Successfully Submited ...");
+    axios.post(
+      "https://server-by-shivam-singh.herokuapp.com/register",
+      jsonData
+    );
+    alert("Successfully Submited go to Login page for Login...");
     setName("");
     setEmail("");
     setPhone("");
