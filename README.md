@@ -19,6 +19,7 @@ npm install
 ```
 npm start
 ```
+<hr/>
 
 ```
 cd server
